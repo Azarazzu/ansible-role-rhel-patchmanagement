@@ -6,6 +6,10 @@
       group_by: key=os_{{ ansible_distribution }}
       changed_when: False
 
-- hosts: os_RedHat
+- hosts: tomcat-servers
+  remote_user: root
+  become: yes
+  become_method: sudo
+
   roles:
     - rhel-patchmanagement

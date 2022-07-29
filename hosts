@@ -3,12 +3,16 @@ foohostB.example.com
 foohostC.example.com
 foohostD.example.com
 
+[tomcat-servers]
+10.0.0.5
+10.0.0.6
+
 [foogroup]
 foohostA.example.com
 
 ## Gruppen fuer RHEL-Patchmanagement Anfang ##################################
 [rhel-patch-phase1]
-foohostA.example.com
+10.0.0.5
 
 [rhel-patch-phase2]
 foohostB.example.com
